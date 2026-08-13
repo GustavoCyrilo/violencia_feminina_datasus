@@ -22,6 +22,10 @@ Este projeto investiga a evolução da violência letal contra mulheres no Brasi
 | DATASUS/SIM (TABNET) | Óbitos femininos por agressão (CID-10: X85–Y09), 2015–2021 |
 | IBGE SIDRA (Tabela 6579) | Estimativas populacionais por estado, 2015–2021 |
 
+**Nota sobre população feminina:** A API do IBGE (SIDRA, Tabela 6579) disponibiliza apenas estimativas populacionais totais por UF para o período 2015–2021 — não há desagregação por sexo nessa série temporal. Como alternativa, buscou-se a Tabela 7358 (População, por sexo e idade), que possui essa desagregação, mas cobre apenas o ano de 2018, insuficiente para a série completa.
+
+Diante dessa limitação, a população feminina foi estimada em 51% da população total por UF — percentual próximo da distribuição demográfica brasileira segundo o IBGE. Essa aproximação afeta uniformemente todos os estados e anos, preservando a validade das comparações relativas (rankings, variações percentuais e clusterização), mas introduz uma margem de imprecisão nos valores absolutos da taxa por 100 mil mulheres.
+
 **Recorte:**
 - Sexo: feminino
 - Causas: CID-10 X85 a Y09 (agressões)

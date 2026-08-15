@@ -271,10 +271,10 @@ Os 5 clusters foram nomeados com base no perfil médio de cada grupo:
 
 ---
 
-## Etapa 7 — Decisões descartadas: Regressão Linear
+## Etapa 7 — Regressão Linear: Projeção de Tendência
 
-Cogitou-se aplicar regressão linear para projetar a taxa de mortalidade (Brasil e Roraima especificamente) para 2022–2023.
+Inicialmente cogitou-se descartar a regressão linear devido ao volume reduzido de dados (apenas 7 pontos anuais, 2015–2021), que compromete a confiabilidade estatística de projeções de longo prazo.
 
-**Motivo do descarte:** a série temporal possui apenas 7 pontos anuais (2015–2021), volume insuficiente para produzir projeções estatisticamente confiáveis. Um modelo treinado com tão poucos dados teria alta variância e baixo poder preditivo real, ainda que tecnicamente executável.
+**Decisão final:** aplicar a regressão mesmo assim, mas com propósito e expectativas explícitas — não como ferramenta de previsão precisa, mas como registro de tendência documentado. As projeções para 2022/2023 ficam salvas no notebook para validação futura, quando o DATASUS liberar os dados desses anos. Esse exercício também demonstra transparência metodológica: um modelo simples, com limitações reconhecidas, é mais valioso para o portfólio do que a ausência de qualquer modelo preditivo.
 
-**Decisão:** priorizar a qualidade e honestidade metodológica do portfólio em vez de incluir um modelo preditivo pouco robusto. Séries temporais mais longas (mais anos de dados, ou granularidade mensal) seriam necessárias para essa análise ter valor real — fica como direção para um projeto futuro com dados mais extensos.
+**Limitação explícita:** com 7 pontos, o coeficiente de determinação (R²) e o erro do modelo devem ser interpretados com cautela — a regressão captura a tendência geral, não prevê com precisão o valor exato de anos futuros.
